@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeFotoView.swift
 //  FotoJSON
 //
 //  Created by Artem Palyutin on 04.09.2021.
@@ -7,15 +7,27 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeFotoView: View {
+    
+    @StateObject var viewModel = FotoViewModel()
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+
+
+
+
+
+
+
+
+
+struct HomeFotoView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeFotoView()
     }
 }

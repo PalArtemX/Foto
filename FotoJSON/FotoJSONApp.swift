@@ -11,7 +11,7 @@ import SwiftUI
 struct FotoJSONApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeFotoView()
         }
     }
 }
