@@ -1,5 +1,5 @@
 //
-//  Foto.swift
+//  Photo.swift
 //  FotoJSON
 //
 //  Created by Artem Palyutin on 04.09.2021.
@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Foto: Identifiable, Codable {
+struct Photo: Identifiable, Codable {
     var albumId: Int
     var id: Int
     var title: String
