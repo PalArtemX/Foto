@@ -12,10 +12,17 @@ struct HomePhotoView: View {
     @StateObject var viewModel = PhotoViewModel()
     
     var body: some View {
-        List {
-            ForEach(viewModel.photos) { photo in
-                Text(photo.title)
+        NavigationView {
+            List {
+                ForEach(viewModel.photos) { photo in
+                    VStack {
+                        RowPostView(title: photo.title, url: URL(string: photo.url)!)
+                        
+                    }
+                }
             }
+            .listStyle(.sidebar)
+            .navigationTitle("Photos")
         }
     }
 }

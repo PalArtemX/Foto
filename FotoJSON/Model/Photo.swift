@@ -13,7 +13,6 @@ struct Photo: Identifiable, Codable {
     var id: Int
     var title: String
     var url: String
-    var thumbnailUrl: String
 }
 
 

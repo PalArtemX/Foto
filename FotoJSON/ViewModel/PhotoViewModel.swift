@@ -25,7 +25,6 @@ class PhotoViewModel: ObservableObject {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/photos") else { return }
         
         URLSession.shared.dataTaskPublisher(for: url)
-            //.subscribe(on: DispatchQueue.global(qos: .background))     // - switching to the default background stream
             .receive(on: DispatchQueue.main)
             .tryMap { (data, response) -> Data in
                 guard

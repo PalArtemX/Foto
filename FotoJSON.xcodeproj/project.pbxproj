@@ -13,6 +13,9 @@
 		1A1FA39226E412F300CFFBB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1FA39126E412F300CFFBB8 /* Preview Assets.xcassets */; };
 		1A1FA39D26E413E000CFFBB8 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1FA39C26E413E000CFFBB8 /* Photo.swift */; };
 		1A1FA39F26E4147400CFFBB8 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1FA39E26E4147400CFFBB8 /* PhotoViewModel.swift */; };
+		1AF4713D26E54E3A008718D3 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4713C26E54E3A008718D3 /* PhotoView.swift */; };
+		1AF4713F26E5511C008718D3 /* RowPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4713E26E5511C008718D3 /* RowPostView.swift */; };
+		1AF4714226E55334008718D3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4714126E55334008718D3 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		1A1FA39326E412F300CFFBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A1FA39C26E413E000CFFBB8 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1A1FA39E26E4147400CFFBB8 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		1AF4713C26E54E3A008718D3 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		1AF4713E26E5511C008718D3 /* RowPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowPostView.swift; sourceTree = "<group>"; };
+		1AF4714126E55334008718D3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 				1A1FA39B26E4133B00CFFBB8 /* Views */,
 				1A1FA39A26E4133200CFFBB8 /* ViewModel */,
 				1A1FA39926E4132B00CFFBB8 /* Model */,
+				1AF4714026E55326008718D3 /* Extension */,
 				1A1FA38E26E412F300CFFBB8 /* Assets.xcassets */,
 				1A1FA39326E412F300CFFBB8 /* Info.plist */,
 				1A1FA39026E412F300CFFBB8 /* Preview Content */,
@@ -95,8 +102,18 @@
 			isa = PBXGroup;
 			children = (
 				1A1FA38C26E412F000CFFBB8 /* HomePhotoView.swift */,
+				1AF4713E26E5511C008718D3 /* RowPostView.swift */,
+				1AF4713C26E54E3A008718D3 /* PhotoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1AF4714026E55326008718D3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4714126E55334008718D3 /* Color.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1FA38D26E412F000CFFBB8 /* HomePhotoView.swift in Sources */,
+				1AF4713F26E5511C008718D3 /* RowPostView.swift in Sources */,
+				1AF4714226E55334008718D3 /* Color.swift in Sources */,
 				1A1FA38B26E412F000CFFBB8 /* FotoJSONApp.swift in Sources */,
 				1A1FA39F26E4147400CFFBB8 /* PhotoViewModel.swift in Sources */,
+				1AF4713D26E54E3A008718D3 /* PhotoView.swift in Sources */,
 				1A1FA39D26E413E000CFFBB8 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -284,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
